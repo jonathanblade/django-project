@@ -15,6 +15,6 @@ def webhook(request):
         repo = git.Repo("/home/jonathanblade/django-project")
         origin = repo.remotes.origin
         origin.pull()
-        return HttpResponse("Updated PythonAnywhere successfully")
+        return HttpResponse(status=200)
     else:
-        return HttpResponse("Wrong event type")
+        return HttpResponse(status=400)
