@@ -1,4 +1,4 @@
-# import git
+import git
 from django.http import HttpResponse
 from django.views.generic import TemplateView
 from django.views.decorators.csrf import csrf_exempt
