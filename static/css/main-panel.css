@@ -3,10 +3,20 @@
 	padding: 0.3rem 0.6rem;
 }
 
+._nav-link {
+	color: #555;
+}
+
 ._nav-link:hover {
+	color: black;
 	text-decoration: none;
 }
 
 .active {
 	border-left: 2px solid black;
+	font-weight: bold;
+}
+
+.active a {
+	color: black;
 }
