@@ -6,9 +6,13 @@
     {% include "includes/stylesheets.html" %}
 </head>
 <body>
-    {% include "includes/navbar.html" %}
-    {% block content %}{% endblock content %}
-    {% include "includes/footer.html" %}
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-6 mt-3">{% include "includes/main-panel.html" %}</div>
+			<div class="col-12 col-md-6 mt-3">{% block content %}{% endblock content %}</div>
+		</div>
+		{% include "includes/footer.html" %}
+	</div>
     {% include "includes/scripts.html" %}
 </body>
 </html>

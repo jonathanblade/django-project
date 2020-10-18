@@ -1,0 +1,12 @@
+._nav-item {
+	border-left: 2px solid white;
+	padding: 0.3rem 0.6rem;
+}
+
+._nav-link:hover {
+	text-decoration: none;
+}
+
+.active {
+	border-left: 2px solid black;
+}
