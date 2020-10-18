@@ -6,10 +6,10 @@
     {% include "includes/stylesheets.html" %}
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-12 col-md-6 mt-3">{% include "includes/main-panel.html" %}</div>
-			<div class="col-12 col-md-6 mt-3">{% block content %}{% endblock content %}</div>
+			<div class="col-12 col-xl-4 mt-4">{% include "includes/main-panel.html" %}</div>
+			<div class="col-12 col-xl-8 mt-4">{% block content %}{% endblock content %}</div>
 		</div>
 		{% include "includes/footer.html" %}
 	</div>

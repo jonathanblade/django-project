@@ -20,6 +20,6 @@ from .views import *
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", HomePageView.as_view(), name="home"),
-    path("news/", NewsPageView.as_view(), name="news"),
-    path("webhook/", webhook)
+    path("education/", EducationPageView.as_view(), name="education"),
+    path("webhook/", webhook, name="webhook")
 ]

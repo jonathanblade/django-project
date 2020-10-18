@@ -6,8 +6,8 @@ from django.views.decorators.csrf import csrf_exempt
 class HomePageView(TemplateView):
     template_name = "home.html"
 
-class NewsPageView(TemplateView):
-    template_name = "news.html"
+class EducationPageView(TemplateView):
+    template_name = "education.html"
 
 @csrf_exempt
 def webhook(request):

@@ -1,12 +1,12 @@
 <div class="container">
   <h3>Семён<br>Сыроватский</h3>
-  <p>Аспирант физического факультета МГУ им. М.В. Ломоносова.</p>
+  <p>Аспирант физического факультета МГУ имeни М.В. Ломоносова.</p>
   <nav>
     <ul class="navbar-nav">
       {% url "home" as url %}
       <li class="_nav-item {% if request.path == url %}active{% endif %}"><a class="_nav-link" href="{% url 'home' %}">Главная</a></li>
-      {% url "news" as url %}
-      <li class="_nav-item {% if request.path == url %}active{% endif %}"><a class="_nav-link" href="{% url 'news' %}">Новости</a></li>
+      {% url "education" as url %}
+      <li class="_nav-item {% if request.path == url %}active{% endif %}"><a class="_nav-link" href="{% url 'education' %}">Образование</a></li>
     </ul>
   </nav>
 </div>
