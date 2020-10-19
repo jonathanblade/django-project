@@ -21,5 +21,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", HomePageView.as_view(), name="home"),
     path("education/", EducationPageView.as_view(), name="education"),
+    path("publications/", PublicationsPageView.as_view(), name="publications"),
     path("webhook/", webhook, name="webhook")
 ]

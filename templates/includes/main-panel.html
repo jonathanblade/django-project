@@ -1,12 +1,18 @@
-<div class="container">
+<div class="container sticky-top" style="top: 1.5rem;">
   <h3>Семён<br>Сыроватский</h3>
   <p>Аспирант физического факультета МГУ имeни М.В. Ломоносова.</p>
-  <nav>
-    <ul class="navbar-nav">
-      {% url "home" as url %}
-      <li class="_nav-item {% if request.path == url %}active{% endif %}"><a class="_nav-link" href="{% url 'home' %}">Главная</a></li>
-      {% url "education" as url %}
-      <li class="_nav-item {% if request.path == url %}active{% endif %}"><a class="_nav-link" href="{% url 'education' %}">Образование</a></li>
-    </ul>
-  </nav>
+  <ul class="nav">
+    <li class="_nav-item pr-3"><a href="https://vk.com/id34885502" target="_blank"><i class="fab fa-vk"></i></a></li>
+    <li class="_nav-item pr-3"><a href="https://t.me/jonathanblade" target="_blank"><i class="fab fa-telegram"></i></a></li>
+    <li class="_nav-item pr-3"><a href="https://github.com/jonathanblade" target="_blank"><i class="fab fa-github"></i></a></li>
+    <li class="_nav-item pr-3"><a href="https://steamcommunity.com/id/jonathanblade" target="_blank"><i class="fab fa-steam"></i></a></li>
+  </ul>
+  <ul class="navbar-nav">
+    {% url "home" as url %}
+    <li class="_nav-item {% if request.path == url %}active{% endif %}"><a class="_nav-link" href="{% url 'home' %}">Главная</a></li>
+    {% url "education" as url %}
+    <li class="_nav-item {% if request.path == url %}active{% endif %}"><a class="_nav-link" href="{% url 'education' %}">Образование</a></li>
+    {% url "publications" as url %}
+    <li class="_nav-item {% if request.path == url %}active{% endif %}"><a class="_nav-link" href="{% url 'publications' %}">Публикации</a></li>
+  </ul>
 </div>

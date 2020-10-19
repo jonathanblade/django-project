@@ -9,6 +9,9 @@ class HomePageView(TemplateView):
 class EducationPageView(TemplateView):
     template_name = "education.html"
 
+class PublicationsPageView(TemplateView):
+	template_name = "publications.html"
+
 @csrf_exempt
 def webhook(request):
     if request.method == "POST":

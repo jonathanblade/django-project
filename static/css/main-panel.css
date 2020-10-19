@@ -4,7 +4,8 @@
 }
 
 ._nav-link {
-	color: #555;
+	color: #6c757d;
+	text-decoration: none;
 }
 
 ._nav-link:hover {
@@ -18,5 +19,13 @@
 }
 
 .active a {
+	color: black;
+}
+
+.fab {
+	color: #6c757d; 
+}
+
+.fab:hover {
 	color: black;
 }

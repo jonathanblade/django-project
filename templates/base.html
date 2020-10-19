@@ -7,12 +7,12 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-12 col-xl-4 mt-4">{% include "includes/main-panel.html" %}</div>
-			<div class="col-12 col-xl-8 mt-4">{% block content %}{% endblock content %}</div>
+		<div class="row justify-content-center">
+			<div class="col-12 col-xl-3 mt-4">{% include "includes/main-panel.html" %}</div>
+			<div class="col-12 col-xl-5 mt-4">{% block content %}{% endblock content %}</div>
 		</div>
-		{% include "includes/footer.html" %}
 	</div>
+	{% include "includes/footer.html" %}
     {% include "includes/scripts.html" %}
 </body>
 </html>
