@@ -2,17 +2,31 @@
 <html>
 <head>
     <title>Django project</title>
-    {% include "includes/metatags.html" %}
-    {% include "includes/stylesheets.html" %}
+    <!-- Metatags -->
+    <meta charset="utf-8">
+	<meta name="author" content="Семён Сыроватский">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/base.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/main-panel.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/footer.css' %}" type="text/css">
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row justify-content-center">
-			<div class="col-12 col-xl-3 mt-4">{% include "includes/main-panel.html" %}</div>
+			<div class="col-12 col-xl-3 mt-4">{% include "includes/header.html" %}</div>
 			<div class="col-12 col-xl-5 mt-4">{% block content %}{% endblock content %}</div>
 		</div>
 	</div>
 	{% include "includes/footer.html" %}
-    {% include "includes/scripts.html" %}
+    <!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" type="text/javascript"></script>
+	{% load static %}
+	<script src="{% static 'js/last-update.js' %}" type="text/javascript"></script>
 </body>
 </html>

@@ -1,11 +1,8 @@
 <div class="container sticky-top" style="top: 1.5rem;">
-  <h3>Семён<br>Сыроватский</h3>
-  <p>Аспирант физического факультета МГУ имeни М.В. Ломоносова.</p>
-  <ul class="nav">
-    <li class="_nav-item"><a href="https://vk.com/id34885502" target="_blank">Вконтакте</a></li>
-    <li class="_nav-item"><a href="https://t.me/jonathanblade" target="_blank">Telegram</a></li>
-    <li class="_nav-item"><a href="https://github.com/jonathanblade" target="_blank">Github</a></li>
-  </ul>
+  {% load static %}
+  <img class="w-25 rounded-circle py-4" src="{% static 'img/me.png' %}">
+  <p><b>Семён Сыроватский</b></p>
+  <p>Аспирант физического факультета МГУ имeни М.В. Ломоносова.</p><hr>
   <ul class="navbar-nav">
     {% url "home" as url %}
     <li class="_nav-item {% if request.path == url %}active{% endif %}"><a class="_nav-link" href="{% url 'home' %}">Главная</a></li>
@@ -13,5 +10,10 @@
     <li class="_nav-item {% if request.path == url %}active{% endif %}"><a class="_nav-link" href="{% url 'education' %}">Образование</a></li>
     {% url "publications" as url %}
     <li class="_nav-item {% if request.path == url %}active{% endif %}"><a class="_nav-link" href="{% url 'publications' %}">Публикации</a></li>
+  </ul><hr>
+  <ul class="nav">
+    <li class="_nav-item"><a href="https://vk.com/id34885502" target="_blank">Вконтакте</a></li>
+    <li class="_nav-item"><a href="https://t.me/jonathanblade" target="_blank">Telegram</a></li>
+    <li class="_nav-item"><a href="https://github.com/jonathanblade" target="_blank">Github</a></li>
   </ul>
 </div>
