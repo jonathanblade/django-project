@@ -4,6 +4,22 @@
 
 {% block content %}
 <div class="container">
-	<h3 class="my-4">Публикации</h3>
+	{% regroup object_list by year as year_list %}
+	<ul class="list-unstyled">
+		{% for year in year_list %}
+		<li>
+			<h3 class="my-4">{{ year.grouper }}</h3>
+			<ul class="list-unstyled">
+				{% for publ in year.list %}
+				<li class="my-4">
+					{{ publ.title }}<br>
+					<small>{{ publ.authors|safe }}</small><br>
+					<small class="text-muted">{{ publ.journal }}, {% if publ.volume %}<strong>{{ publ.volume }}</strong>{% if publ.number %}({{ publ.number }}){% endif %}, {% endif %}{{ publ.year }}{% if publ.url %} <a href={{ publ.url }}><i class="fas fa-file-pdf"></i></a>{% endif %}{% if publ.doi %}, doi: <a href={{ publ.get_doi_url }}>{{ publ.doi }}</a>{% endif %}</small>
+				</li>
+				{% endfor %}
+			</ul>
+		</li>
+		{% endfor %}
+	</ul>
 </div>
 {% endblock content %}
