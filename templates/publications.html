@@ -9,7 +9,7 @@
 	{% for year in year_list %}
 	<h3>{{ year.grouper }}</h3><hr>
 		{% for publ in year.list %}
-		<div class='my-4'>
+		<div class='mb-4'>
 			{{ publ.title }}<br>
 			<small>{{ publ.authors|safe }}</small><br>
 			<small class='text-muted'>{% if publ.url %}<a class='mr-2' href={{ publ.url }} target='_blank'><i class='fas fa-file-pdf'></i></a>{% endif %}{{ publ.journal }}, {% if publ.volume %}<strong>{{ publ.volume }}</strong>{% if publ.number %}({{ publ.number }}){% endif %}, {% endif %}{{ publ.year }}{% if publ.doi %}, doi: <a href={{ publ.get_doi_url }} target='_blank'>{{ publ.doi }}</a>{% endif %}</small>
