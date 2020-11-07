@@ -1,102 +1,46 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block title %}Образование | Семён Сыроватский{% endblock %}
 
 {% block content %}
-<div class="container">
-    <h3 class="my-4">Основное</h3>
-    <div class="row row-cols-1">
-        <div class="col mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">
-                        <strong>Бакалавриат</strong><hr>
-                        <small>
-                            <i class="fas fa-university mr-2"></i>Иркутский государственный университет, физический факультет<br>
-                            <i class="fas fa-calendar-alt mr-2"></i>2014-2018
-                        </small>
-                    </div><hr>
-                    <div class="card-text">
-                        <small>
-                            <strong>Специальность</strong><br>
-                            <span class="text-muted">03.03.03 Радиофизика</span><br>
-                            <strong>Направление</strong><br>
-                            <span class="text-muted">Телекоммуникационные системы и информационные технологии</span><br>
-                            <strong>Дипломная работа</strong><br>
-                            <a href="http://eportfolio.isu.ru/sites/default/files/userdata/4118/7/7_work_4118_6.pdf" target="_blank">Влияние солнечных вспышек на ионосферу Земли в 24-ом цикле солнечной активности</a>
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">
-                        <strong>Магистратура</strong><hr>
-                        <small>
-                            <i class="fas fa-university mr-2"></i>Московский государственный университет имени М.В. Ломоносова, физический факультет<br>
-                            <i class="fas fa-calendar-alt mr-2"></i>2018-2020
-                        </small>
-                    </div><hr>
-                    <div class="card-text">
-                        <small>
-                            <strong>Специальность</strong><br>
-                            <span class="text-muted">03.04.02 Физика</span><br>
-                            <strong>Направление</strong><br>
-                            <span class="text-muted">Физика атмосферы и околоземного космического пространства</span><br>
-                            <strong>Дипломная работа</strong><br>
-                            <a href="https://github.com/jonathanblade/master-diploma" target="_blank">Оценка точности позиционирования GPS при естественных и искусственных возмущениях ионосферы</a>
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">
-                        <strong>Аспирантура</strong><hr>
-                        <small>
-                            <i class="fas fa-university mr-2"></i>Московский государственный университет имени М.В. Ломоносова, физический факультет<br>
-                            <i class="fas fa-calendar-alt mr-2"></i>2020-2023
-                        </small>
-                    </div><hr>
-                    <div class="card-text">
-                        <small>
-                            <strong>Специальность</strong><br>
-                            <span class="text-muted">05.06.01 Науки о Земле</span><br>
-                            <strong>Направление</strong><br>
-                            <span class="text-muted">Физика атмосферы и гидросферы</span>
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class='col-12 col-xl-3 col-md-5'>{% include 'nav.html' %}</div>
+<div class='col-12 col-xl-4 col-md-6 my-4'>
+    <h3>Бакалавриат</h3>
+    <div class='mb-4'>
+        <small>
+            <i class='fas fa-university mr-2'></i>Иркутский государственный университет, физический факультет<br>
+            <i class='fas fa-calendar-alt mr-2'></i>2014-2018<hr>
+            <strong>Специальность</strong><br>
+            <span class='text-muted'>03.03.03 Радиофизика</span><br>
+            <strong>Направление</strong><br>
+            <span class='text-muted'>Телекоммуникационные системы и информационные технологии</span><br>
+            <strong>Дипломная работа</strong><br>
+            <a href='http://eportfolio.isu.ru/sites/default/files/userdata/4118/7/7_work_4118_6.pdf' target='_blank'>Влияние солнечных вспышек на ионосферу Земли в 24-ом цикле солнечной активности</a>
+        </small>
     </div>
-    <h3 class="mb-4">Дополнительное</h3>
-    <div class="row row-cols-1">
-        <div class="col mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">
-                        <strong>Профессиональная переподготовка</strong><hr>
-                        <small>
-                            <i class="fas fa-university mr-2"></i>Иркутский государственный университет, физический факультет<br>
-                            <i class="fas fa-calendar-alt mr-2"></i>2017-2018
-                        </small>
-                    </div><hr>
-                    <div class="card-text">
-                        <small>
-                            <strong>Специальность</strong><br>
-                            <span class="text-muted">10.03.00 Информационная безопасность</span><br>
-                            <strong>Аттестационная работа</strong><br>
-                            <span class="text-muted">Пакетный фильтр iptables</span>
-                        </small>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <h3>Магистратура</h3>
+    <div class='mb-4'>
+        <small>
+            <i class='fas fa-university mr-2'></i>Московский государственный университет имени М.В. Ломоносова, физический факультет<br>
+            <i class='fas fa-calendar-alt mr-2'></i>2018-2020<hr>
+            <strong>Специальность</strong><br>
+            <span class='text-muted'>03.04.02 Физика</span><br>
+            <strong>Направление</strong><br>
+            <span class='text-muted'>Физика атмосферы и околоземного космического пространства</span><br>
+            <strong>Дипломная работа</strong><br>
+            <a href='https://github.com/jonathanblade/master-diploma' target='_blank'>Оценка точности позиционирования GPS при естественных и искусственных возмущениях ионосферы</a>
+        </small>
+    </div>
+    <h3>Аспирантура</h3>
+    <div class='mb-4'>
+        <small>
+            <i class='fas fa-university mr-2'></i>Московский государственный университет имени М.В. Ломоносова, физический факультет<br>
+            <i class='fas fa-calendar-alt mr-2'></i>2020-2023<hr>
+            <strong>Специальность</strong><br>
+            <span class='text-muted'>05.06.01 Науки о Земле</span><br>
+            <strong>Направление</strong><br>
+            <span class='text-muted'>Физика атмосферы и гидросферы</span>
+        </small>
     </div>
 </div>
 {% endblock content %}

@@ -12,6 +12,6 @@ class Publication(models.Model):
     url = models.URLField(blank=True)
 
     def get_doi_url(self):
-        base_url = "https://doi.org"
-        doi_url = base_url + "/" + self.doi
+        base_url = 'https://doi.org'
+        doi_url = base_url + '/' + self.doi
         return doi_url
