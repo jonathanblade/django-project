@@ -3,15 +3,14 @@
   <img class='w-25 rounded-circle' src={% static 'img/me.png' %}>
   <p></p><b>Семён Сыроватский</b></p>
   <p>Аспирант физического факультета МГУ имeни М.В. Ломоносова.</p>
-  <div class='alert alert-warning' role='alert'>
-    Сайт находится в стадии разработки.<br> 
-    <small>Последнее обновление: <a class='alert-link' href="#" target="_blank" id="commit-url"><span id="commit-date"></span></a></small>
-  </div>
   <ul class='list-inline'>
     <li class='list-inline-item'><a href='https://vk.com/id34885502' target='_blank'><small>Вконтакте</small></a></li>
     <li class='list-inline-item'><a href='https://t.me/jonathanblade' target='_blank'><small>Telegram</small></a></li>
     <li class='list-inline-item'><a href='https://github.com/jonathanblade' target='_blank'><small>Github</small></a></li>
-  </ul><hr>
+  </ul>
+  <div class='alert alert-warning text-center'>
+    <small>Последнее обновление: <a class='alert-link' href="#" target="_blank" id="commit-url"><span id="commit-date"></span></a></small>
+  </div><hr>
   <ul class='navbar-nav'>
     {% url 'home' as url %}
     <li class='_nav-item {% if request.path == url %}active{% endif %}'><a class='_nav-link' href={% url 'home' %}>Главная</a></li>
